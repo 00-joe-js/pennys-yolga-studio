@@ -2,7 +2,6 @@
   "name": "pennys-yolga-studio",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run start-server & npm run build-watch",
     "start-server": "nodemon --watch server -e js,html server/main.js",
     "build-watch": "webpack -w",
     "seed": "node ./bin/seed"
