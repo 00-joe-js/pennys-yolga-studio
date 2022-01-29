@@ -2,9 +2,10 @@
   "name": "pennys-yolga-studio",
   "version": "1.0.0",
   "scripts": {
-    "start-server": "nodemon --watch server -e js,html server/main.js",
-    "build-watch": "webpack -w",
-    "seed": "node ./bin/seed"
+    "start": "node server/main.js",
+    "start-dev": "nodemon --watch server -e js,html server/main.js",
+    "build": "webpack -w",
+    "seed": "node ./bin/seed" 
   },
   "dependencies": {
     "axios": "^0.20.0",
