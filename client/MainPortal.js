@@ -3,7 +3,7 @@ import axios from "axios";
 
 import Signup from "./SignupForEbook";
 
-class MasterPortal extends React.Component {
+class MainPortal extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -44,4 +44,4 @@ class MasterPortal extends React.Component {
     }
 }
 
-export default MasterPortal;
+export default MainPortal;

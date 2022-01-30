@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MasterPortal from './MasterPortal';
+import MainPortal from './MainPortal';
 
 export default class Main extends React.Component {
   constructor() {
@@ -16,7 +16,7 @@ export default class Main extends React.Component {
   render() {
 
     if (this.state.clickedThrough) {
-      return <MasterPortal />;
+      return <MainPortal />;
     }
 
     return (

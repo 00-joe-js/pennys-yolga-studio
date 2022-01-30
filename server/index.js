@@ -34,6 +34,8 @@ app.use((req, res, next) => {
 
 // Sends our index.html (the "single page" of our SPA)
 app.get('/', (req, res, next) => {
+  // Server accesses the file system of the computer its running on
+  // to find a file located ../client/index.html from this file.
   res.sendFile(path.join(__dirname, '..', 'client', 'index.html'));
 });
 
