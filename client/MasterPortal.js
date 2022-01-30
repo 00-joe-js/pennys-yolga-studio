@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
 
+import Signup from "./SignupForEbook";
+
 class MasterPortal extends React.Component {
     constructor() {
         super();
@@ -36,6 +38,7 @@ class MasterPortal extends React.Component {
                     <img src={currentPose.referencePhoto} />
                     <h5>{currentPose.description}</h5>
                 </div>
+                <Signup />
             </div>
         );
     }

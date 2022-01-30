@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize');
 
-const db = new Sequelize(process.env.DATABASE_URL || 'postgres://joe-alves:buttons@localhost:5432/yolga', {
+const dbAddress = process.env.DATABASE_URL || 'postgres://joe-alves:buttons@localhost:5432/yolga';
+const db = new Sequelize(dbAddress, {
   logging: false,
   dialectOptions: {
     ssl: {
